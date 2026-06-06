@@ -24,3 +24,11 @@ untuk mengambil branch orang lain yang ada di remote/github
 langkah" nya
 1. git fetch origin
 2. git checkout -b (mengikuti nama branch yang di github) origin/(nama branch yang mau di ambil di github)
+
+
+
+git status (untuk melihat berubahan di branch yang sedang dibuka)
+
+
+menggabungkan dua branch
+git merge (nama branch yang mau di gabungkan)
