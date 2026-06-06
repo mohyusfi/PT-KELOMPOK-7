@@ -2,6 +2,10 @@
     display: none;
 }
 
+.title-tehnik {
+    color: rgb(255, 208, 0);
+}
+
 nav {
     width: 100vw;
     background-color: aliceblue;
@@ -88,5 +92,38 @@ nav .nav-container ul li a {
 
     nav .nav-container ul.show {
         transform: translateY(0);
+    }
+}
+
+nav {
+    background-color: var(--bg-card);
+    border-bottom: 1px solid var(--border-color);
+    box-shadow: 0 12px 32px var(--glow-1);
+    backdrop-filter: blur(14px);
+}
+
+nav .nav-container h1 {
+    color: var(--primary);
+}
+
+nav .nav-container ul li a {
+    color: var(--text-main);
+    transition: var(--transition-smooth);
+}
+
+nav .nav-container ul li a:hover {
+    color: var(--primary-hover);
+}
+
+nav .nav-container .button-menu {
+    color: var(--text-main);
+}
+
+@media (max-width: 768px) {
+    nav .nav-container ul {
+        background-color: var(--bg-card);
+        border-bottom: 1px solid var(--border-color);
+        box-shadow: 0 16px 40px var(--glow-2);
+        backdrop-filter: blur(14px);
     }
 }
