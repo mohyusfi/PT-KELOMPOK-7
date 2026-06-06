@@ -1,4 +1,4 @@
-untuk menambahkan ke staging index
+untuk menambahkan ke staging index[
 git add .
 git add nama-file
 
@@ -6,7 +6,7 @@ git add nama-file
 git commit -m "pesan yang ingin dimasukkan"
 
 
-git push origin (nama-branchnya) ini untuk update perubahan dari local ke github
+git push origin (nama-branchnya) ini untuk update perubahan dari local ke github] "untuk ba pusth ke github"
 git pull origin (nama-branchnya) ini untuk mengambil perubahan dari github ke local
 
 
@@ -15,3 +15,12 @@ git branch -a () ini untuk melihat list branch local dan remote/github
 
 git branch (nama-branchnya) untuk membuat branch baru
 git checkout (nama-branchnya) untuk pindah branch 
+
+untuk menghapus branch local
+git branch -d (nama branch yang mau di hapus)
+
+
+untuk mengambil branch orang lain yang ada di remote/github
+langkah" nya
+1. git fetch origin
+2. git checkout -b (mengikuti nama branch yang di github) origin/(nama branch yang mau di ambil di github)
