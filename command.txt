@@ -1,0 +1,17 @@
+untuk menambahkan ke staging index
+git add .
+git add nama-file
+
+
+git commit -m "pesan yang ingin dimasukkan"
+
+
+git push origin (nama-branchnya) ini untuk update perubahan dari local ke github
+git pull origin (nama-branchnya) ini untuk mengambil perubahan dari github ke local
+
+
+git branch () ini untuk melihat list branch yang ada di local
+git branch -a () ini untuk melihat list branch local dan remote/github
+
+git branch (nama-branchnya) untuk membuat branch baru
+git checkout (nama-branchnya) untuk pindah branch 
