@@ -32,3 +32,9 @@ git status (untuk melihat berubahan di branch yang sedang dibuka)
 
 menggabungkan dua branch
 git merge (nama branch yang mau di gabungkan)
+
+
+cara menghapus branch di github/remote 
+git push origin --delete (tergantung nama branchnya)
+git fetch origin --prune (untuk mengapdeta branch yang di lokal yang di hpus di github)
+
