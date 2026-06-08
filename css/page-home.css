@@ -85,7 +85,6 @@
     margin-top: 0.5rem;
 }
 
-.home .home-container .left-side button,
 .home .home-container .left-side .home-actions a {
     min-height: 3rem;
     padding: 0 1.35rem;
@@ -95,15 +94,15 @@
     transition: var(--transition-smooth);
 }
 
-.home .home-container .left-side button {
+.home .home-container .left-side .home-actions a.home-primary-action {
     color: white;
     background-color: var(--primary);
     border: 1px solid var(--primary);
-    cursor: pointer;
     box-shadow: 0 14px 30px var(--glow-1);
 }
 
-.home .home-container .left-side button:hover {
+.home .home-container .left-side .home-actions a.home-primary-action:hover {
+    color: white;
     background-color: var(--primary-hover);
     border-color: var(--primary-hover);
     transform: translateY(-2px);
@@ -152,12 +151,10 @@
     }
 
     .home .home-container .left-side .home-actions,
-    .home .home-container .left-side button,
     .home .home-container .left-side .home-actions a {
         width: 100%;
     }
 
-    .home .home-container .left-side button,
     .home .home-container .left-side .home-actions a {
         justify-content: center;
     }
