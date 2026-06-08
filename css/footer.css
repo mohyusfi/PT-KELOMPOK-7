@@ -2,16 +2,23 @@
     background: #134f69;
     color: white;
     padding: 30px 20px 10px;
+    display: flex;
+    
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items: flex-start;
     flex-wrap: wrap;
+    gap: 350px;
+    
 }
 
 .footer-content div {
     margin-bottom: 15px;
+    max-width: 450px;
+    line-height: 1.7;
 }
 
 .footer a {
@@ -25,8 +32,9 @@
 }
 
 .footer-bottom {
-    text-align: center;
-    border-top: 1px solid #555;
-    margin-top: 15px;
-    padding-top: 10px;
+    max-width: 300px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #5f6b7a;
+    margin-bottom: 30px;
 }
