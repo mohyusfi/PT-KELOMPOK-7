@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/page-home.css">
     <link rel="stylesheet" href="./css/page-aboutus.css">
+    <link rel="stylesheet" href="./css/page-product.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
 
@@ -18,7 +19,7 @@
         <ul>
           <li><a href="#home">Home</a></li>
           <li><a href="#aboutus">AboutUS</a></li>
-          <li><a href="">Product</a></li>
+          <li><a href="#product">Product</a></li>
           <li><a href="">ContactUs</a></li>
         </ul>
         <label class="button-menu" for="button-menu">
@@ -37,7 +38,7 @@
                     <h2>Sempurnakan Setiap Sudut Rumah Anda</h2>
                     <p>Tingkatkan kualitas hidup Anda dengan pilihan furnitur modern, mebel kokoh, dan elektronik pintar yang siap melengkapi kebutuhan rumah.</p>
                     <div class="home-actions">
-                        <button type="button">Lihat Product</button>
+                        <a class="home-primary-action" href="#product">Lihat Product</a>
                         <a href="">Hubungi Kami</a>
                     </div>
                 </div>
@@ -95,7 +96,22 @@
         </section>
 
 
-        <!--  -->
+        <!-- page product -->
+        <section id="product" class="product">
+          <div class="product-container">
+            <div class="product-heading">
+              <span class="product-label">Product</span>
+              <h2>Pilihan produk untuk rumah dan ruang usaha.</h2>
+              <p>
+                Temukan elektronik, furniture, dan mebel Jepara yang siap melengkapi
+                kebutuhan harian dengan tampilan rapi dan fungsi yang tahan lama.
+              </p>
+            </div>
+
+            <div class="product-tabs" id="product-tabs" aria-label="Filter kategori produk"></div>
+            <div class="product-grid" id="product-grid" aria-live="polite"></div>
+          </div>
+        </section>
 
     </main>
 
@@ -114,7 +130,7 @@
             <ul>
               <li><a href="#">Home</a></li>
               <li><a href="#">AboutUS</a></li>
-              <li><a href="#">Product</a></li>
+              <li><a href="#product">Product</a></li>
               <li><a href="#">ContactUs</a></li>
             </ul>
           </div>
@@ -133,9 +149,10 @@
 
     <script src="https://unpkg.com/lucide@latest"></script>
     <script type="module">
-      lucide.createIcons();
+      lucide.createIcons()
     </script>
     <script src="./js/navbar.js"></script>
+    <script src="./js/product.js"></script>
 </body>
 
 </html>
