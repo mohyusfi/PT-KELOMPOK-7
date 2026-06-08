@@ -7,18 +7,17 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/navbar.css">
     <link rel="stylesheet" href="./css/page-home.css">
+    <link rel="stylesheet" href="./css/page-aboutus.css">
     <link rel="stylesheet" href="./css/footer.css">
 </head>
-
-<body>
 
   <body>
     <nav>
       <div class="nav-container">
         <h1>Serba<span class="title-tehnik">Tehnik</span></h1>
         <ul>
-          <li><a href="">Home</a></li>
-          <li><a href="">AboutUS</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutus">AboutUS</a></li>
           <li><a href="">Product</a></li>
           <li><a href="">ContactUs</a></li>
         </ul>
@@ -30,7 +29,8 @@
     </nav>
 
     <main>
-        <section class="home">
+      <!-- page home -->
+        <section id="home" class="home">
             <div class="home-container">
                 <div class="left-side">
                     <span class="home-label">Toko Serba Tehnik</span>
@@ -47,6 +47,51 @@
                     </div>
                 </div>
             </div>
+        </section>
+
+        <!-- page about us -->
+        <section id="aboutus" class="aboutus">
+          <div class="aboutus-container">
+            <div class="aboutus-content">
+              <span class="aboutus-label">About Us</span>
+              <h2>Menyediakan kebutuhan rumah yang fungsional dan tahan lama.</h2>
+              <p>
+                Toko Serba Tehnik hadir untuk membantu pelanggan menemukan pilihan elektronik,
+                furniture, dan mebel Jepara yang sesuai untuk hunian maupun ruang usaha. Kami
+                mengutamakan produk berkualitas, pelayanan ramah, dan rekomendasi yang praktis
+                sesuai kebutuhan.
+              </p>
+
+              <div class="aboutus-stats">
+                <div>
+                  <strong>3+</strong>
+                  <span>Kategori produk utama</span>
+                </div>
+                <div>
+                  <strong>2026</strong>
+                  <span>Terus melayani pelanggan</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="aboutus-card">
+              <h3>Kenapa memilih kami?</h3>
+              <ul>
+                <li>
+                  <i data-lucide="badge-check"></i>
+                  <span>Produk dipilih dari kategori yang dibutuhkan rumah modern.</span>
+                </li>
+                <li>
+                  <i data-lucide="sofa"></i>
+                  <span>Menyediakan furniture dan mebel jati Jepara yang kokoh.</span>
+                </li>
+                <li>
+                  <i data-lucide="headphones"></i>
+                  <span>Siap membantu pelanggan memilih produk yang paling sesuai.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
         </section>
     </main>
 
