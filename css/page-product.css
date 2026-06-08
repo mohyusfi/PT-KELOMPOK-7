@@ -1,0 +1,207 @@
+.product {
+    width: 100%;
+    padding: 5rem 1.5rem;
+    background:
+        radial-gradient(circle at 12% 18%, rgba(255, 212, 0, 0.13), transparent 24rem),
+        radial-gradient(circle at 88% 80%, var(--glow-1), transparent 28rem),
+        var(--bg-light);
+}
+
+.product .product-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.product .product-heading {
+    max-width: 760px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.product .product-label {
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.product h2 {
+    color: var(--text-main);
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.1;
+}
+
+.product .product-heading p {
+    color: var(--text-muted);
+    font-size: 1.04rem;
+    line-height: 1.8;
+}
+
+.product .product-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 1.5rem;
+}
+
+.product .product-tabs button {
+    min-height: 2.9rem;
+    padding: 0 1.15rem;
+    color: var(--text-main);
+    font-size: 0.92rem;
+    font-weight: 700;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+}
+
+.product .product-tabs button:hover,
+.product .product-tabs button.active {
+    color: white;
+    background-color: var(--primary);
+    border-color: var(--primary);
+    box-shadow: 0 14px 30px var(--glow-1);
+}
+
+.product .product-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 1.25rem;
+}
+
+.product .product-card {
+    min-height: 20rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 18px 48px var(--glow-2);
+    transition: var(--transition-smooth);
+}
+
+.product .product-card.hidden {
+    display: none;
+}
+
+.product .product-card:hover {
+    border-color: var(--primary);
+    transform: translateY(-4px);
+}
+
+.product .product-card i {
+    width: 3.25rem;
+    height: 3.25rem;
+    padding: 0.75rem;
+    color: white;
+    background-color: var(--primary);
+    border-radius: var(--radius-md);
+}
+
+.product .product-category {
+    display: inline-flex;
+    align-items: center;
+    min-height: 1.9rem;
+    padding: 0 0.75rem;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    background-color: rgba(14, 165, 233, 0.08);
+    border: 1px solid rgba(14, 165, 233, 0.12);
+    border-radius: 999px;
+}
+
+.product .product-card h3 {
+    color: var(--text-main);
+    font-size: 1.35rem;
+    line-height: 1.2;
+}
+
+.product .product-card p {
+    color: var(--text-muted);
+    font-size: 0.98rem;
+    line-height: 1.6;
+    margin-top: 0.4rem;
+}
+
+.product .product-card strong {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    color: var(--primary);
+    font-size: 1rem;
+    line-height: 1.4;
+}
+
+.product .product-card a {
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.75rem;
+    padding: 0 1rem;
+    color: var(--primary);
+    font-size: 0.92rem;
+    font-weight: 700;
+    text-decoration: none;
+    background-color: rgba(14, 165, 233, 0.08);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    transition: var(--transition-smooth);
+}
+
+.product .product-card a:hover {
+    color: white;
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+@media (max-width: 900px) {
+    .product {
+        padding: 4rem 1.5rem;
+    }
+
+    .product .product-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+@media (max-width: 620px) {
+    .product {
+        padding-inline: 1rem;
+    }
+
+    .product .product-heading {
+        align-items: center;
+        text-align: center;
+    }
+
+    .product .product-tabs {
+        justify-content: center;
+    }
+
+    .product .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .product .product-card {
+        min-height: auto;
+    }
+}
+
+@media (max-width: 420px) {
+    .product .product-card {
+        padding: 1.25rem;
+    }
+
+    .product .product-tabs button {
+        width: 100%;
+    }
+}
