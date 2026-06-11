@@ -14,7 +14,7 @@ git branch () ini untuk melihat list branch yang ada di local
 git branch -a () ini untuk melihat list branch local dan remote/github
 
 git branch (nama-branchnya) untuk membuat branch baru
-git checkout (nama-branchnya) untuk pindah branch 
+git checkout (nama-branchnya) untuk pindah branch  
 
 untuk menghapus branch local
 git branch -d (nama branch yang mau di hapus)

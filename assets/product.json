@@ -1,3 +1,88 @@
 {
-    
+  "categories": [
+    {
+      "id": "elektronik",
+      "name": "Elektronik"
+    },
+    {
+      "id": "furniture",
+      "name": "Furniture"
+    },
+    {
+      "id": "mebel",
+      "name": "Mebel Jepara"
+    }
+  ],
+  "products": [
+    {
+      "name": "Speaker Aktif",
+      "category": "elektronik",
+      "image": "./assets/images/elektronik/speeker.jpg",
+      "description": "Speaker praktis untuk hiburan keluarga, toko, atau acara kecil di rumah.",
+      "price": "Mulai dari Rp350.000"
+    },
+    {
+      "name": "Kipas Angin",
+      "category": "elektronik",
+      "image": "./assets/images/elektronik/kipas angin.jpg",
+      "description": "Kipas angin hemat tempat dengan hembusan stabil untuk ruangan harian.",
+      "price": "Mulai dari Rp180.000"
+    },
+    {
+      "name": "Rice Cooker",
+      "category": "elektronik",
+      "image": "./assets/images/elektronik/rice cooker.jpg",
+      "description": "Penanak nasi serbaguna untuk kebutuhan dapur keluarga setiap hari.",
+      "price": "Mulai dari Rp250.000"
+    },
+    {
+      "name": "TV Tabung",
+      "category": "elektronik",
+      "image": "./assets/images/elektronik/tv tabung.jpg",
+      "description": "Televisi ekonomis untuk hiburan dasar dengan penggunaan yang mudah.",
+      "price": "Mulai dari Rp400.000"
+    },
+    {
+      "name": "Sofa Ruang Tamu",
+      "category": "furniture",
+      "image": "./assets/images/furniture/sofa.jpg",
+      "description": "Sofa nyaman untuk ruang tamu dengan desain sederhana dan mudah dipadukan.",
+      "price": "Mulai dari Rp1.500.000"
+    },
+    {
+      "name": "Lemari Pakaian",
+      "category": "furniture",
+      "image": "./assets/images/furniture/lemari.jpg",
+      "description": "Lemari penyimpanan luas untuk menjaga pakaian dan perlengkapan tetap rapi.",
+      "price": "Mulai dari Rp1.250.000"
+    },
+    {
+      "name": "Meja Makan",
+      "category": "furniture",
+      "image": "./assets/images/furniture/meja makan.jpg",
+      "description": "Meja makan keluarga dengan permukaan luas untuk aktivitas makan bersama.",
+      "price": "Mulai dari Rp1.800.000"
+    },
+    {
+      "name": "Rak TV",
+      "category": "furniture",
+      "image": "./assets/images/furniture/rak tv.jpg",
+      "description": "Rak TV fungsional untuk perangkat hiburan dan penyimpanan ruang keluarga.",
+      "price": "Mulai dari Rp900.000"
+    },
+    {
+      "name": "Kursi Tamu Jati",
+      "category": "mebel",
+      "image": "./assets/images/mebel/kursi tamu jati.jpg",
+      "description": "Kursi tamu jati kokoh dengan nuansa klasik untuk ruang tamu utama.",
+      "price": "Mulai dari Rp2.500.000"
+    },
+    {
+      "name": "Meja Makan Jati",
+      "category": "mebel",
+      "image": "./assets/images/mebel/Meja makan jati.jpg",
+      "description": "Meja makan jati Jepara dengan konstruksi kuat dan tampilan hangat.",
+      "price": "Mulai dari Rp3.000.000"
+    }
+  ]
 }
