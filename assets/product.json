@@ -19,14 +19,14 @@
       "category": "elektronik",
       "image": "./assets/images/elektronik/speeker.jpg",
       "description": "Speaker praktis untuk hiburan keluarga, toko, atau acara kecil di rumah.",
-      "price": "Mulai dari Rp350.000"
+      "price": "Mulai dari Rp539.000"
     },
     {
       "name": "Kipas Angin",
       "category": "elektronik",
       "image": "./assets/images/elektronik/kipas angin.jpg",
       "description": "Kipas angin hemat tempat dengan hembusan stabil untuk ruangan harian.",
-      "price": "Mulai dari Rp180.000"
+      "price": "Mulai dari Rp250.000"
     },
     {
       "name": "Rice Cooker",
@@ -40,7 +40,7 @@
       "category": "elektronik",
       "image": "./assets/images/elektronik/tv tabung.jpg",
       "description": "Televisi ekonomis untuk hiburan dasar dengan penggunaan yang mudah.",
-      "price": "Mulai dari Rp400.000"
+      "price": "Mulai dari Rp850.000"
     },
     {
       "name": "Sofa Ruang Tamu",
@@ -54,7 +54,7 @@
       "category": "furniture",
       "image": "./assets/images/furniture/lemari.jpg",
       "description": "Lemari penyimpanan luas untuk menjaga pakaian dan perlengkapan tetap rapi.",
-      "price": "Mulai dari Rp1.250.000"
+      "price": "Mulai dari Rp995.000"
     },
     {
       "name": "Meja Makan",
@@ -69,6 +69,13 @@
       "image": "./assets/images/furniture/rak tv.jpg",
       "description": "Rak TV fungsional untuk perangkat hiburan dan penyimpanan ruang keluarga.",
       "price": "Mulai dari Rp900.000"
+    },
+    {
+      "name": "spring bed merek American",
+      "category": "furniture",
+      "image": "./assets/images/furniture/sprimbet.jpg",
+      "description": "Hadirkan kehangatan istirahat maksimal dengan spring bed American yang kuat, awet, dan ramah di kantong.",
+      "price": "Mulai dari Rp1.400.000"
     },
     {
       "name": "Kursi Tamu Jati",
