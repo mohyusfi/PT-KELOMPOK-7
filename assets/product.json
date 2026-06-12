@@ -43,6 +43,13 @@
       "price": "Mulai dari Rp850.000"
     },
     {
+      "name": "Kulkas Polytron",
+      "category": "elektronik",
+      "image": "./assets/images/elektronik/kulkas.jpg",
+      "description": "Mewah, awet, dan muat banyak! Kulkas 2 pintu Polytron Belleza, pas buat dapur estetik Anda.",
+      "price": "Mulai dari Rp3.100.000"
+    },
+    {
       "name": "Sofa Ruang Tamu",
       "category": "furniture",
       "image": "./assets/images/furniture/sofa.jpg",
