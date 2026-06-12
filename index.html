@@ -8,8 +8,6 @@
   <link rel="stylesheet" href="./css/main.css">
   <link rel="stylesheet" href="./css/navbar.css">
   <link rel="stylesheet" href="./css/page-home.css">
-  <link rel="stylesheet" href="./css/page-aboutus.css">
-  <link rel="stylesheet" href="./css/page-product.css">
   <link rel="stylesheet" href="./css/page-contactus.css">
   <link rel="stylesheet" href="./css/footer.css">
 </head>
@@ -19,10 +17,10 @@
     <div class="nav-container">
       <h1>Serba<span class="title-tehnik">Tehnik</span></h1>
       <ul>
-        <li><a href="#home">Home</a></li>
-        <li><a href="#aboutus">AboutUS</a></li>
-        <li><a href="#product">Product</a></li>
-        <li><a href="#contactus">ContactUs</a></li>
+        <li><a href="./index.html#home">Home</a></li>
+        <li><a href="./aboutus.html">AboutUS</a></li>
+        <li><a href="./product.html">Product</a></li>
+        <li><a href="./index.html#contactus">ContactUs</a></li>
       </ul>
       <label class="button-menu" for="button-menu">
         <i data-lucide="menu" class="menu-icon"></i>
@@ -41,7 +39,7 @@
           <p>Tingkatkan kualitas hidup Anda dengan pilihan furnitur modern, mebel kokoh, dan elektronik pintar yang siap
             melengkapi kebutuhan rumah.</p>
           <div class="home-actions">
-            <a class="home-primary-action" href="#product">Lihat Product</a>
+            <a class="home-primary-action" href="./product.html">Lihat Product</a>
             <a href="https://wa.me/6285215245574?text=Halo%20Admin,%20saya%20mau%20order%20produk%20ini:%0ANama%20Produk:%20%0AJumlah:%20%0ANama%20Penerima:%20%0AAlamat%20Lengkap:%20" target="_blank">Hubungi Kami</a>
           </div>
         </div>
@@ -50,70 +48,6 @@
             <img src="./assets/images/page-home.jpeg" alt="Produk furnitur dan elektronik Toko Serba Tehnik">
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- page about us -->
-    <section id="aboutus" class="aboutus">
-      <div class="aboutus-container">
-        <div class="aboutus-content">
-          <span class="aboutus-label">About Us</span>
-          <h2>Menyediakan kebutuhan rumah yang fungsional dan tahan lama.</h2>
-          <p>
-            Toko Serba Tehnik hadir untuk membantu pelanggan menemukan pilihan elektronik,
-            furniture, dan mebel Jepara yang sesuai untuk hunian maupun ruang usaha. Kami
-            mengutamakan produk berkualitas, pelayanan ramah, dan rekomendasi yang praktis
-            sesuai kebutuhan.
-          </p>
-
-          <div class="aboutus-stats">
-            <div>
-              <strong>3+</strong>
-              <span>Kategori produk utama</span>
-            </div>
-            <div>
-              <strong>2026</strong>
-              <span>Terus melayani pelanggan</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="aboutus-card">
-          <h3>Kenapa memilih kami?</h3>
-          <ul>
-            <li>
-              <i data-lucide="badge-check"></i>
-              <span>Produk dipilih dari kategori yang dibutuhkan rumah modern.</span>
-            </li>
-            <li>
-              <i data-lucide="sofa"></i>
-              <span>Menyediakan furniture dan mebel jati Jepara yang kokoh.</span>
-            </li>
-            <li>
-              <i data-lucide="headphones"></i>
-              <span>Siap membantu pelanggan memilih produk yang paling sesuai.</span>
-            </li>
-          </ul>
-          <h3 style="margin-top: 1rem;">Lokasi</h3>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8288121488426!2d121.73095215529281!3d-2.218135463966538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d9aaf1cd6a44fcb%3A0xbb750505d2e5a51f!2sToko%20Serba%20Tehnik!5e0!3m2!1sid!2sid!4v1781178328561!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-      </div>
-    </section>
-
-    <!-- page product -->
-    <section id="product" class="product">
-      <div class="product-container">
-        <div class="product-heading">
-          <span class="product-label">Product</span>
-          <h2>Pilihan produk untuk rumah dan ruang usaha.</h2>
-          <p>
-            Temukan elektronik, furniture, dan mebel Jepara yang siap melengkapi
-            kebutuhan harian dengan tampilan rapi dan fungsi yang tahan lama.
-          </p>
-        </div>
-
-        <div class="product-tabs" id="product-tabs" aria-label="Filter kategori produk"></div>
-        <div class="product-grid" id="product-grid" aria-live="polite"></div>
       </div>
     </section>
 
@@ -130,47 +64,47 @@
           </p>
 
           <div class="contactus-list">
-            <a href="https://wa.me/6285215245574?text=Halo%20Admin,%20saya%20ingin%20bertanya%20tentang%20produk%20Toko%20Serba%20Tehnik." target="_blank" class="contactus-item">
-              <i data-lucide="message-circle"></i>
-              <span>
-                <strong>WhatsApp</strong>
-                0852-1524-5574
-              </span>
-            </a>
-            <a href="mailto:serbatehnik12@gmail.com" class="contactus-item">
-              <i data-lucide="mail"></i>
-              <span>
-                <strong>Email</strong>
-                serbatehnik12@gmail.com
-              </span>
-            </a>
             <div class="contactus-item">
-              <i data-lucide="map-pin"></i>
+              <i data-lucide="clipboard-list"></i>
               <span>
-                <strong>Lokasi Toko</strong>
-                Kunjungi toko kami untuk melihat produk secara langsung.
+                <strong>Konsultasi Kebutuhan</strong>
+                Ceritakan produk yang Anda cari agar kami bisa membantu memberi rekomendasi.
+              </span>
+            </div>
+            <div class="contactus-item">
+              <i data-lucide="package-check"></i>
+              <span>
+                <strong>Informasi Produk</strong>
+                Tanyakan kategori, spesifikasi, stok, atau kisaran produk yang tersedia.
+              </span>
+            </div>
+            <div class="contactus-item">
+              <i data-lucide="truck"></i>
+              <span>
+                <strong>Pemesanan & Pengiriman</strong>
+                Isi detail kebutuhan Anda supaya proses pemesanan bisa diarahkan lebih cepat.
               </span>
             </div>
           </div>
         </div>
 
-        <form class="contactus-form" action="mailto:serbatehnik12@gmail.com" method="post" enctype="text/plain">
-          <h3>Kirim Pesan</h3>
+        <form class="contactus-form">
+          <div class="contactus-form-heading">
+            <span>Konsultasi Produk</span>
+            <h3>Kirim Pesan</h3>
+          </div>
           <div class="form-group">
             <label for="contact-name">Nama Lengkap</label>
             <input type="text" id="contact-name" name="name" placeholder="Masukkan nama Anda" required>
           </div>
           <div class="form-group">
-            <label for="contact-phone">Nomor WhatsApp</label>
-            <input type="tel" id="contact-phone" name="phone" placeholder="Contoh: 0852-1524-5574" required>
-          </div>
-          <div class="form-group">
-            <label for="contact-category">Kategori Produk</label>
+            <label for="contact-category">Kategori</label>
             <select id="contact-category" name="category" required>
               <option value="">Pilih kategori</option>
               <option value="Elektronik">Elektronik</option>
               <option value="Furniture">Furniture</option>
               <option value="Mebel Jepara">Mebel Jepara</option>
+              <option value="Other">Other</option>
             </select>
           </div>
           <div class="form-group">
@@ -199,10 +133,10 @@
       <div>
         <h3>Menu</h3>
         <ul>
-          <li><a href="#home">Home</a></li>
-          <li><a href="#aboutus">AboutUS</a></li>
-          <li><a href="#product">Product</a></li>
-          <li><a href="#contactus">ContactUs</a></li>
+          <li><a href="./index.html#home">Home</a></li>
+          <li><a href="./aboutus.html">AboutUS</a></li>
+          <li><a href="./product.html">Product</a></li>
+          <li><a href="./index.html#contactus">ContactUs</a></li>
         </ul>
       </div>
 
@@ -242,7 +176,6 @@
     lucide.createIcons()
   </script>
   <script src="./js/navbar.js"></script>
-  <script src="./js/product.js"></script>
 </body>
 
 </html>

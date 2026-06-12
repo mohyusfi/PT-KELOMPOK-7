@@ -1,8 +1,9 @@
 .contactus {
     width: 100%;
-    padding: 5rem 1.5rem;
+    padding: 6rem 1.5rem;
     background:
         radial-gradient(circle at 18% 22%, var(--glow-1), transparent 28rem),
+        radial-gradient(circle at 88% 82%, var(--glow-2), transparent 24rem),
         linear-gradient(135deg, rgba(255, 212, 0, 0.08), rgba(14, 165, 233, 0.08)),
         var(--bg-light);
 }
@@ -12,9 +13,9 @@
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+    grid-template-columns: minmax(0, 1fr) minmax(340px, 0.78fr);
     gap: 2rem;
-    column-gap: 5rem;
+    column-gap: 4rem;
     align-items: center;
 }
 
@@ -49,11 +50,11 @@
 
 .contactus .contactus-list {
     width: 100%;
-    max-width: 620px;
+    max-width: 680px;
     display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 1rem;
-    margin-top: 0.75rem;
+    margin-top: 1rem;
 }
 
 .contactus .contactus-item,
@@ -65,8 +66,8 @@
 }
 
 .contactus .contactus-item {
-    min-height: 7.25rem;
-    padding: 1rem;
+    min-height: 7rem;
+    padding: 1.1rem;
     display: grid;
     grid-template-columns: 2.75rem minmax(0, 1fr);
     gap: 0.9rem;
@@ -80,7 +81,7 @@
     grid-column: 1 / -1;
 }
 
-.contactus a.contactus-item:hover {
+.contactus .contactus-item:hover {
     border-color: var(--primary);
     transform: translateY(-3px);
 }
@@ -92,6 +93,7 @@
     color: white;
     background-color: var(--primary);
     border-radius: var(--radius-md);
+    box-shadow: 0 12px 26px var(--glow-1);
 }
 
 .contactus .contactus-item strong {
@@ -103,13 +105,37 @@
 
 .contactus .contactus-form {
     width: 100%;
-    padding: 1.5rem;
+    padding: 1.65rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.contactus .contactus-form::before {
+    content: "";
+    position: absolute;
+    inset: 0 0 auto 0;
+    height: 0.35rem;
+    background: linear-gradient(90deg, var(--primary), var(--yellow));
+}
+
+.contactus .contactus-form-heading {
+    margin-bottom: 1.35rem;
+}
+
+.contactus .contactus-form-heading span {
+    display: block;
+    margin-bottom: 0.35rem;
+    color: var(--primary);
+    font-size: 0.78rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
 }
 
 .contactus .contactus-form h3 {
     color: var(--text-main);
     font-size: 1.35rem;
-    margin-bottom: 1.25rem;
+    margin-bottom: 0;
 }
 
 .contactus .form-group {
@@ -133,7 +159,7 @@
     padding: 0.85rem 0.95rem;
     color: var(--text-main);
     font: inherit;
-    background-color: white;
+    background-color: rgba(255, 255, 255, 0.92);
     border: 1px solid var(--border-color);
     border-radius: var(--radius-md);
     outline: none;
@@ -141,7 +167,7 @@
 }
 
 .contactus textarea {
-    min-height: 8.5rem;
+    min-height: 9rem;
     resize: vertical;
 }
 
@@ -183,12 +209,13 @@
 
 @media (max-width: 900px) {
     .contactus {
-        padding: 4rem 1.5rem;
+        padding: 5rem 1.5rem;
     }
 
     .contactus .contactus-container {
         grid-template-columns: 1fr;
         align-items: flex-start;
+        gap: 2.5rem;
     }
 }
 
@@ -206,16 +233,12 @@
         grid-template-columns: 1fr;
     }
 
-    .contactus .contactus-item {
-        text-align: left;
-    }
-
     .contactus .contactus-item:last-child {
         grid-column: auto;
     }
 
     .contactus .contactus-form {
-        padding: 1.25rem;
+        padding: 1.35rem;
     }
 }
 
@@ -223,6 +246,7 @@
     .contactus .contactus-item {
         grid-template-columns: 2.5rem minmax(0, 1fr);
         padding: 0.9rem;
+        text-align: left;
     }
 
     .contactus .contactus-item i {
