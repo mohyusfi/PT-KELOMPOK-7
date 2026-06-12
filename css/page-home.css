@@ -25,6 +25,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    animation: heroImageReveal 0.9s ease both;
 }
 
 .home .home-container .right-side .image-card {
@@ -37,6 +38,19 @@
     border-radius: var(--radius-lg);
     box-shadow: 0 24px 70px var(--glow-2);
     overflow: hidden;
+    position: relative;
+    animation: heroImageFloat 2s ease-in-out 0.9s infinite;
+}
+
+.home .home-container .right-side .image-card::after {
+    content: "";
+    position: absolute;
+    inset: 0.85rem;
+    border-radius: var(--radius-md);
+    background: linear-gradient(120deg, transparent 20%, rgba(255, 255, 255, 0.42), transparent 58%);
+    transform: translateX(-130%);
+    animation: heroImageShine 3s ease-in-out 1.2s infinite;
+    pointer-events: none;
 }
 
 .home .home-container .right-side img {
@@ -45,6 +59,46 @@
     display: block;
     object-fit: cover;
     border-radius: var(--radius-md);
+    transition: transform 0.5s ease;
+}
+
+.home .home-container .right-side .image-card:hover img {
+    transform: scale(1.04);
+}
+
+@keyframes heroImageReveal {
+    from {
+        opacity: 0;
+        transform: translateY(1.5rem) scale(0.96);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+    }
+}
+
+@keyframes heroImageFloat {
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-0.75rem);
+    }
+}
+
+@keyframes heroImageShine {
+    0%,
+    45% {
+        transform: translateX(-130%);
+    }
+
+    70%,
+    100% {
+        transform: translateX(130%);
+    }
 }
 
 .home .home-container .left-side {
@@ -157,5 +211,17 @@
 
     .home .home-container .left-side .home-actions a {
         justify-content: center;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .home .home-container .right-side,
+    .home .home-container .right-side .image-card,
+    .home .home-container .right-side .image-card::after {
+        animation: none;
+    }
+
+    .home .home-container .right-side img {
+        transition: none;
     }
 }
