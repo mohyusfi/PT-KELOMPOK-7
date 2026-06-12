@@ -134,11 +134,33 @@ nav .nav-container h1 {
 
 nav .nav-container ul li a {
     color: var(--text-main);
+    display: inline-flex;
+    align-items: center;
+    min-height: 2.25rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 999px;
+    position: relative;
     transition: var(--transition-smooth);
 }
 
 nav .nav-container ul li a:hover {
     color: var(--primary-hover);
+}
+
+nav .nav-container ul li a.nav-link-active {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+nav .nav-container ul li a.nav-link-active::after {
+    content: "";
+    position: absolute;
+    left: 0.7rem;
+    right: 0.7rem;
+    bottom: 0.2rem;
+    height: 3px;
+    background-color: var(--yellow);
+    border-radius: 999px;
 }
 
 nav .nav-container .button-menu {

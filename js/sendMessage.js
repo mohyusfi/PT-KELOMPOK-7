@@ -14,9 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const message = contactForm.elements.message.value.trim()
 
     const whatsappMessage = `Halo Admin, saya ingin konsultasi produk.
-Nama: ${name}
-Kategori: ${category}
-Pesan: ${message}`
+Nama    : ${name}
+Kategor : ${category}
+Pesan   : ${message}`
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`
 
