@@ -1,0 +1,232 @@
+.contactus {
+    width: 100%;
+    padding: 5rem 1.5rem;
+    background:
+        radial-gradient(circle at 18% 22%, var(--glow-1), transparent 28rem),
+        linear-gradient(135deg, rgba(255, 212, 0, 0.08), rgba(14, 165, 233, 0.08)),
+        var(--bg-light);
+}
+
+.contactus .contactus-container {
+    max-width: 1200px;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(320px, 0.82fr);
+    gap: 2rem;
+    column-gap: 5rem;
+    align-items: center;
+}
+
+.contactus .contactus-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+}
+
+.contactus .contactus-label {
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.contactus h2 {
+    max-width: 720px;
+    color: var(--text-main);
+    font-size: clamp(2rem, 4vw, 3.4rem);
+    line-height: 1.1;
+}
+
+.contactus p {
+    max-width: 680px;
+    color: var(--text-muted);
+    font-size: 1.04rem;
+    line-height: 1.8;
+}
+
+.contactus .contactus-list {
+    width: 100%;
+    max-width: 620px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+    margin-top: 0.75rem;
+}
+
+.contactus .contactus-item,
+.contactus .contactus-form {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-lg);
+    box-shadow: 0 18px 48px var(--glow-2);
+}
+
+.contactus .contactus-item {
+    min-height: 7.25rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 2.75rem minmax(0, 1fr);
+    gap: 0.9rem;
+    align-items: center;
+    color: var(--text-muted);
+    text-decoration: none;
+    transition: var(--transition-smooth);
+}
+
+.contactus .contactus-item:last-child {
+    grid-column: 1 / -1;
+}
+
+.contactus a.contactus-item:hover {
+    border-color: var(--primary);
+    transform: translateY(-3px);
+}
+
+.contactus .contactus-item i {
+    width: 2.75rem;
+    height: 2.75rem;
+    padding: 0.65rem;
+    color: white;
+    background-color: var(--primary);
+    border-radius: var(--radius-md);
+}
+
+.contactus .contactus-item strong {
+    display: block;
+    margin-bottom: 0.25rem;
+    color: var(--text-main);
+    font-size: 1rem;
+}
+
+.contactus .contactus-form {
+    width: 100%;
+    padding: 1.5rem;
+}
+
+.contactus .contactus-form h3 {
+    color: var(--text-main);
+    font-size: 1.35rem;
+    margin-bottom: 1.25rem;
+}
+
+.contactus .form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.45rem;
+    margin-bottom: 1rem;
+}
+
+.contactus label {
+    color: var(--text-main);
+    font-size: 0.92rem;
+    font-weight: 700;
+}
+
+.contactus input,
+.contactus select,
+.contactus textarea {
+    width: 100%;
+    min-height: 2.9rem;
+    padding: 0.85rem 0.95rem;
+    color: var(--text-main);
+    font: inherit;
+    background-color: white;
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    outline: none;
+    transition: var(--transition-smooth);
+}
+
+.contactus textarea {
+    min-height: 8.5rem;
+    resize: vertical;
+}
+
+.contactus input:focus,
+.contactus select:focus,
+.contactus textarea:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px var(--glow-1);
+}
+
+.contactus button {
+    width: 100%;
+    min-height: 3rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.6rem;
+    color: white;
+    font-size: 0.95rem;
+    font-weight: 700;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
+    border-radius: var(--radius-md);
+    cursor: pointer;
+    transition: var(--transition-smooth);
+    box-shadow: 0 14px 30px var(--glow-1);
+}
+
+.contactus button:hover {
+    background-color: var(--primary-hover);
+    border-color: var(--primary-hover);
+    transform: translateY(-2px);
+}
+
+.contactus button i {
+    width: 1.1rem;
+    height: 1.1rem;
+}
+
+@media (max-width: 900px) {
+    .contactus {
+        padding: 4rem 1.5rem;
+    }
+
+    .contactus .contactus-container {
+        grid-template-columns: 1fr;
+        align-items: flex-start;
+    }
+}
+
+@media (max-width: 620px) {
+    .contactus {
+        padding-inline: 1rem;
+    }
+
+    .contactus .contactus-content {
+        align-items: center;
+        text-align: center;
+    }
+
+    .contactus .contactus-list {
+        grid-template-columns: 1fr;
+    }
+
+    .contactus .contactus-item {
+        text-align: left;
+    }
+
+    .contactus .contactus-item:last-child {
+        grid-column: auto;
+    }
+
+    .contactus .contactus-form {
+        padding: 1.25rem;
+    }
+}
+
+@media (max-width: 420px) {
+    .contactus .contactus-item {
+        grid-template-columns: 2.5rem minmax(0, 1fr);
+        padding: 0.9rem;
+    }
+
+    .contactus .contactus-item i {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+}

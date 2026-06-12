@@ -10,6 +10,7 @@
   <link rel="stylesheet" href="./css/page-home.css">
   <link rel="stylesheet" href="./css/page-aboutus.css">
   <link rel="stylesheet" href="./css/page-product.css">
+  <link rel="stylesheet" href="./css/page-contactus.css">
   <link rel="stylesheet" href="./css/footer.css">
 </head>
 
@@ -21,7 +22,7 @@
         <li><a href="#home">Home</a></li>
         <li><a href="#aboutus">AboutUS</a></li>
         <li><a href="#product">Product</a></li>
-        <li><a href="">ContactUs</a></li>
+        <li><a href="#contactus">ContactUs</a></li>
       </ul>
       <label class="button-menu" for="button-menu">
         <i data-lucide="menu" class="menu-icon"></i>
@@ -96,8 +97,6 @@
           <h3 style="margin-top: 1rem;">Lokasi</h3>
           <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.8288121488426!2d121.73095215529281!3d-2.218135463966538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2d9aaf1cd6a44fcb%3A0xbb750505d2e5a51f!2sToko%20Serba%20Tehnik!5e0!3m2!1sid!2sid!4v1781178328561!5m2!1sid!2sid" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
-
-      </div>
       </div>
     </section>
 
@@ -118,6 +117,73 @@
       </div>
     </section>
 
+    <!-- page contact us -->
+    <section id="contactus" class="contactus">
+      <div class="contactus-container">
+        <div class="contactus-content">
+          <span class="contactus-label">Contact Us</span>
+          <h2>Butuh bantuan memilih produk? Kami siap membantu.</h2>
+          <p>
+            Hubungi Toko Serba Tehnik untuk konsultasi produk, stok barang,
+            pemesanan, atau informasi pengiriman. Tim kami akan membantu
+            mencarikan pilihan yang sesuai kebutuhan rumah dan usaha Anda.
+          </p>
+
+          <div class="contactus-list">
+            <a href="https://wa.me/6285215245574?text=Halo%20Admin,%20saya%20ingin%20bertanya%20tentang%20produk%20Toko%20Serba%20Tehnik." target="_blank" class="contactus-item">
+              <i data-lucide="message-circle"></i>
+              <span>
+                <strong>WhatsApp</strong>
+                0852-1524-5574
+              </span>
+            </a>
+            <a href="mailto:serbatehnik12@gmail.com" class="contactus-item">
+              <i data-lucide="mail"></i>
+              <span>
+                <strong>Email</strong>
+                serbatehnik12@gmail.com
+              </span>
+            </a>
+            <div class="contactus-item">
+              <i data-lucide="map-pin"></i>
+              <span>
+                <strong>Lokasi Toko</strong>
+                Kunjungi toko kami untuk melihat produk secara langsung.
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <form class="contactus-form" action="mailto:serbatehnik12@gmail.com" method="post" enctype="text/plain">
+          <h3>Kirim Pesan</h3>
+          <div class="form-group">
+            <label for="contact-name">Nama Lengkap</label>
+            <input type="text" id="contact-name" name="name" placeholder="Masukkan nama Anda" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-phone">Nomor WhatsApp</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="Contoh: 0852-1524-5574" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-category">Kategori Produk</label>
+            <select id="contact-category" name="category" required>
+              <option value="">Pilih kategori</option>
+              <option value="Elektronik">Elektronik</option>
+              <option value="Furniture">Furniture</option>
+              <option value="Mebel Jepara">Mebel Jepara</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="contact-message">Pesan</label>
+            <textarea id="contact-message" name="message" rows="5" placeholder="Tulis kebutuhan produk Anda" required></textarea>
+          </div>
+          <button type="submit">
+            <i data-lucide="send"></i>
+            Kirim Pesan
+          </button>
+        </form>
+      </div>
+    </section>
   </main>
 
   <footer class="footer">
@@ -133,10 +199,10 @@
       <div>
         <h3>Menu</h3>
         <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">AboutUS</a></li>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutus">AboutUS</a></li>
           <li><a href="#product">Product</a></li>
-          <li><a href="#">ContactUs</a></li>
+          <li><a href="#contactus">ContactUs</a></li>
         </ul>
       </div>
 
@@ -157,7 +223,7 @@
             <i data-lucide="facebook"></i>
             <span>Facebook</span>
           </a>
-          <a href="https://wa.me/62805215245574" aria-label="WhatsApp">
+          <a href="https://wa.me/6285215245574" aria-label="WhatsApp">
             <i data-lucide="message-circle"></i>
             <span>WhatsApp</span>
           </a>
