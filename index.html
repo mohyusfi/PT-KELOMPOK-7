@@ -1,184 +1,211 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Toko Serba Tehnik</title>
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/navbar.css" />
+    <link rel="stylesheet" href="./css/page-home.css" />
+    <link rel="stylesheet" href="./css/page-contactus.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Toko Serba Tehnik</title>
-  <link rel="stylesheet" href="./css/main.css">
-  <link rel="stylesheet" href="./css/navbar.css">
-  <link rel="stylesheet" href="./css/page-home.css">
-  <link rel="stylesheet" href="./css/page-contactus.css">
-  <link rel="stylesheet" href="./css/footer.css">
-</head>
-
-<body>
-  <nav>
-    <div class="nav-container">
-      <h1>Serba<span class="title-tehnik">Tehnik</span></h1>
-      <ul>
-        <li><a href="./index.html#home">Home</a></li>
-        <li><a href="./aboutus.html">AboutUS</a></li>
-        <li><a href="./product.html">Product</a></li>
-        <li><a href="./index.html#contactus">ContactUs</a></li>
-      </ul>
-      <label class="button-menu" for="button-menu">
-        <input type="checkbox" name="button-menu" id="button-menu" />
-        <span></span>
-        <span></span>
-        <span></span>
-      </label>
-    </div>
-  </nav>
-
-  <main>
-    <!-- page home -->
-    <section id="home" class="home">
-      <div class="home-container">
-        <div class="left-side">
-          <span class="home-label">Toko Serba Tehnik</span>
-          <h2>Sempurnakan Setiap Sudut Rumah Anda</h2>
-          <p>Tingkatkan kualitas hidup Anda dengan pilihan furnitur modern, mebel kokoh, dan elektronik pintar yang siap
-            melengkapi kebutuhan rumah.</p>
-          <div class="home-actions">
-            <a class="home-primary-action" href="./product.html">Lihat Product</a>
-            <a href="https://wa.me/6285215245574?text=Halo%20Admin,%20saya%20mau%20order%20produk%20ini:%0ANama%20Produk:%20%0AJumlah:%20%0ANama%20Penerima:%20%0AAlamat%20Lengkap:%20" target="_blank">Hubungi Kami</a>
-          </div>
-        </div>
-        <div class="right-side">
-          <div class="image-card">
-            <img src="./assets/images/page-home.jpeg" alt="Produk furnitur dan elektronik Toko Serba Tehnik">
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- page contact us -->
-    <section id="contactus" class="contactus">
-      <div class="contactus-container">
-        <div class="contactus-content">
-          <span class="contactus-label">Contact Us</span>
-          <h2>Butuh bantuan memilih produk? Kami siap membantu.</h2>
-          <p>
-            Hubungi Toko Serba Tehnik untuk konsultasi produk, stok barang,
-            pemesanan, atau informasi pengiriman. Tim kami akan membantu
-            mencarikan pilihan yang sesuai kebutuhan rumah dan usaha Anda.
-          </p>
-
-          <div class="contactus-list">
-            <div class="contactus-item">
-              <i data-lucide="clipboard-list"></i>
-              <span>
-                <strong>Konsultasi Kebutuhan</strong>
-                Ceritakan produk yang Anda cari agar kami bisa membantu memberi rekomendasi.
-              </span>
-            </div>
-            <div class="contactus-item">
-              <i data-lucide="package-check"></i>
-              <span>
-                <strong>Informasi Produk</strong>
-                Tanyakan kategori, spesifikasi, stok, atau kisaran produk yang tersedia.
-              </span>
-            </div>
-            <div class="contactus-item">
-              <i data-lucide="truck"></i>
-              <span>
-                <strong>Pemesanan & Pengiriman</strong>
-                Isi detail kebutuhan Anda supaya proses pemesanan bisa diarahkan lebih cepat.
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <form class="contactus-form">
-          <div class="contactus-form-heading">
-            <span>Konsultasi Produk</span>
-            <h3>Kirim Pesan</h3>
-          </div>
-          <div class="form-group">
-            <label for="contact-name">Nama Lengkap</label>
-            <input type="text" id="contact-name" name="name" placeholder="Masukkan nama Anda" required>
-          </div>
-          <div class="form-group">
-            <label for="contact-category">Kategori</label>
-            <select id="contact-category" name="category" required>
-              <option value="">Pilih kategori</option>
-              <option value="Elektronik">Elektronik</option>
-              <option value="Furniture">Furniture</option>
-              <option value="Mebel Jepara">Mebel Jepara</option>
-              <option value="Other">Other</option>
-            </select>
-          </div>
-          <div class="form-group">
-            <label for="contact-message">Pesan</label>
-            <textarea id="contact-message" name="message" rows="5" placeholder="Tulis kebutuhan produk Anda" required></textarea>
-          </div>
-          <button type="submit">
-            <i data-lucide="send"></i>
-            Kirim Pesan
-          </button>
-        </form>
-      </div>
-    </section>
-  </main>
-
-  <footer class="footer">
-    <div class="footer-content">
-      <div>
-        <h3>Toko Serba Tehnik</h3>
-        <p>
-          Toko Serba Tehnik menyediakan berbagai produk elektronik,
-          furnitur, dan perlengkapan rumah tangga berkualitas dengan harga
-          terjangkau serta pelayanan yang terpercaya.
-        </p>
-      </div>
-      <div>
-        <h3>Menu</h3>
+  <body>
+    <nav>
+      <div class="nav-container">
+        <h1>Serba<span class="title-tehnik">Tehnik</span></h1>
         <ul>
           <li><a href="./index.html#home">Home</a></li>
           <li><a href="./aboutus.html">AboutUS</a></li>
           <li><a href="./product.html">Product</a></li>
           <li><a href="./index.html#contactus">ContactUs</a></li>
         </ul>
+        <label class="button-menu" for="button-menu">
+          <input type="checkbox" name="button-menu" id="button-menu" />
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
       </div>
+    </nav>
 
-      <div>
-        <h3>Kontak</h3>
-        <p>Email: serbatehnik12@gmail.com</p>
-        <p>Telp: 0852-1524-5574</p>
-      </div>
+    <main>
+      <!-- page home -->
+      <section id="home" class="home">
+        <div class="home-container">
+          <div class="left-side">
+            <span class="home-label">Toko Serba Tehnik</span>
+            <h2>Sempurnakan Setiap Sudut Rumah Anda</h2>
+            <p>
+              Tingkatkan kualitas hidup Anda dengan pilihan furnitur modern,
+              mebel kokoh, dan elektronik pintar yang siap melengkapi kebutuhan
+              rumah.
+            </p>
+            <div class="home-actions">
+              <a class="home-primary-action" href="./product.html"
+                >Lihat Product</a
+              >
+              <a
+                href="https://wa.me/6285215245574?text=Halo%20Admin,%20saya%20mau%20order%20produk%20ini:%0ANama%20Produk:%20%0AJumlah:%20%0ANama%20Penerima:%20%0AAlamat%20Lengkap:%20"
+                target="_blank"
+                >Hubungi Kami</a
+              >
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="image-card">
+              <img
+                src="./assets/images/page-home.jpeg"
+                alt="Produk furnitur dan elektronik Toko Serba Tehnik"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
 
-      <div>
-        <h3>Media Sosial</h3>
-        <div class="social-links">
-          <a href="https://www.instagram.com/" target="Instagram">
-            <i class="fa-brands fa-instagram"></i>
-            <span>Instagram</span>
-          </a>
-          <a href="#" aria-label="Facebook">
-            <i class="fa-brands fa-facebook"></i>
-            <span>Facebook</span>
-          </a>
-          <a href="https://wa.me/6285215245574" aria-label="WhatsApp">
-            <i class="fa-brands fa-whatsapp"></i>
-            <span>WhatsApp</span>
-          </a>
+      <!-- page contact us -->
+      <section id="contactus" class="contactus">
+        <div class="contactus-container">
+          <div class="contactus-content">
+            <span class="contactus-label">Contact Us</span>
+            <h2>Butuh bantuan memilih produk? Kami siap membantu.</h2>
+            <p>
+              Hubungi Toko Serba Tehnik untuk konsultasi produk, stok barang,
+              pemesanan, atau informasi pengiriman. Tim kami akan membantu
+              mencarikan pilihan yang sesuai kebutuhan rumah dan usaha Anda.
+            </p>
+
+            <div class="contactus-list">
+              <div class="contactus-item">
+                <i data-lucide="clipboard-list"></i>
+                <span>
+                  <strong>Konsultasi Kebutuhan</strong>
+                  Ceritakan produk yang Anda cari agar kami bisa membantu
+                  memberi rekomendasi.
+                </span>
+              </div>
+              <div class="contactus-item">
+                <i data-lucide="package-check"></i>
+                <span>
+                  <strong>Informasi Produk</strong>
+                  Tanyakan kategori, spesifikasi, stok, atau kisaran produk yang
+                  tersedia.
+                </span>
+              </div>
+              <div class="contactus-item">
+                <i data-lucide="truck"></i>
+                <span>
+                  <strong>Pemesanan & Pengiriman</strong>
+                  Isi detail kebutuhan Anda supaya proses pemesanan bisa
+                  diarahkan lebih cepat.
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <form class="contactus-form">
+            <div class="contactus-form-heading">
+              <span>Konsultasi Produk</span>
+              <h3>Kirim Pesan</h3>
+            </div>
+            <div class="form-group">
+              <label for="contact-name">Nama Lengkap</label>
+              <input
+                type="text"
+                id="contact-name"
+                name="name"
+                placeholder="Masukkan nama Anda"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="contact-category">Kategori</label>
+              <select id="contact-category" name="category" required>
+                <option value="">Pilih kategori</option>
+                <option value="Elektronik">Elektronik</option>
+                <option value="Furniture">Furniture</option>
+                <option value="Mebel Jepara">Mebel Jepara</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="contact-message">Pesan</label>
+              <textarea
+                id="contact-message"
+                name="message"
+                rows="5"
+                placeholder="Tulis kebutuhan produk Anda"
+                required
+              ></textarea>
+            </div>
+            <button type="submit">
+              <i data-lucide="send"></i>
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-content">
+        <div>
+          <h3>Toko Serba Tehnik</h3>
+          <p>
+            Menyediakan berbagai produk elektronik, furnitur, dan perlengkapan
+            rumah tangga berkualitas sejak 17 Juli 2015.
+          </p>
+        </div>
+        <div>
+          <h3>Menu</h3>
+          <ul>
+            <li><a href="./index.html#home">Home</a></li>
+            <li><a href="./aboutus.html">AboutUS</a></li>
+            <li><a href="./product.html">Product</a></li>
+            <li><a href="./index.html#contactus">ContactUs</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Kontak</h3>
+          <p>Email: serbatehnik12@gmail.com</p>
+          <p>Telp: 0852-1524-5574</p>
+        </div>
+
+        <div>
+          <h3>Media Sosial</h3>
+          <div class="social-links">
+            <a href="https://www.instagram.com/" target="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook"></i>
+              <span>Facebook</span>
+            </a>
+            <a href="https://wa.me/6285215245574" aria-label="WhatsApp">
+              <i class="fa-brands fa-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <div class="footer-bottom">
-      <p>&copy; 2026 Toko Serba Tehnik.</p>
-    </div>
-  </footer>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Toko Serba Tehnik.</p>
+      </div>
+    </footer>
 
-  <script src="https://unpkg.com/lucide@latest"></script>
-  <script src="https://kit.fontawesome.com/492f70bf42.js" crossorigin="anonymous"></script>
-  <script type="module">
-    lucide.createIcons()
-  </script>
-  <script src="./js/navbar.js"></script>
-  <script src="./js/sendMessage.js"></script>
-</body>
-
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script
+      src="https://kit.fontawesome.com/492f70bf42.js"
+      crossorigin="anonymous"
+    ></script>
+    <script type="module">
+      lucide.createIcons();
+    </script>
+    <script src="./js/navbar.js"></script>
+    <script src="./js/sendMessage.js"></script>
+  </body>
 </html>
