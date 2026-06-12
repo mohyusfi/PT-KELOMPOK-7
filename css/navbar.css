@@ -24,7 +24,7 @@ nav .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding-inline: 1.5rem;
+    /* padding-inline: 1.5rem; */
 }
 
 nav .nav-container ul {
@@ -134,6 +134,7 @@ nav .nav-container h1 {
 
 nav .nav-container ul li a {
     color: var(--text-main);
+    font-weight: 500;
     display: inline-flex;
     align-items: center;
     min-height: 2.25rem;
