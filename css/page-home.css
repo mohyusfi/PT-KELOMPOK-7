@@ -23,7 +23,7 @@
 
 .home .home-container .right-side {
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
     animation: heroImageReveal 0.9s ease both;
 }
@@ -193,6 +193,10 @@
     .home .home-container .left-side {
         align-items: center;
         text-align: center;
+    }
+
+    .home .home-container .right-side {
+        justify-content: center;
     }
 }
 

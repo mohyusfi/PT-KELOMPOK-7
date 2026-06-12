@@ -217,6 +217,15 @@
         align-items: flex-start;
         gap: 2.5rem;
     }
+
+    .contactus .contactus-content {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contactus .contactus-content h2 {
+        text-align: center;
+    }
 }
 
 @media (max-width: 620px) {

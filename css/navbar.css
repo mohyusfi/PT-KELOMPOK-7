@@ -15,6 +15,8 @@ nav {
     height: 4rem;
     position: fixed;
     z-index: 1000000;
+    /* padding-inline: 1.5rem; */
+    padding: 0 1.5rem;
 }
 
 
@@ -39,12 +41,13 @@ nav .nav-container ul li a {
 }
 
 /* responsive */
-@media (max-width: 1194px) {
+@media (max-width: 1199px) {
     nav {
         width: 100dvw;
+        padding: 0 1.5rem;
     }
 
-    nav .nav-container {
+    /* nav .nav-container {
         max-height: none;
         padding-inline: 2rem;
     }
@@ -110,13 +113,85 @@ nav .nav-container ul li a {
 
     nav .nav-container ul.show {
         transform: translateY(0);
-    }
+    } */
 }
 
 
-@media (max-width: 768px) {
+@media (max-width: 900px) {
+    nav {
+        padding: 0;
+    }
     nav .nav-container ul {
         height: 45vh;
+    }
+
+
+    nav .nav-container {
+        max-height: none;
+        padding-inline: 1.5rem;
+    }
+
+    nav .nav-container .button-menu {
+        display: flex;
+        width: 2rem;
+        height: 1.5rem;
+        flex-direction: column;
+        justify-content: space-between;
+        position: relative;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    nav .nav-container .button-menu span {
+        display: block;
+        width: 100%;
+        height: 3px;
+        background-color: currentColor;
+        border-radius: 999px;
+        transform-origin: center;
+        transition: transform 0.25s ease, opacity 0.2s ease;
+    }
+
+    nav .nav-container .button-menu input {
+        opacity: 0;
+        position: absolute;
+        inset: 0;
+        z-index: 1000;
+        cursor: pointer;
+    }
+
+    nav .nav-container .button-menu input:checked ~ span:nth-of-type(1) {
+        transform: translateY(10.5px) rotate(45deg);
+    }
+
+    nav .nav-container .button-menu input:checked ~ span:nth-of-type(2) {
+        opacity: 0;
+    }
+
+    nav .nav-container .button-menu input:checked ~ span:nth-of-type(3) {
+        transform: translateY(-10.5px) rotate(-45deg);
+    }
+
+    nav .nav-container ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        position: absolute;
+        background-color: rgb(238, 238, 238);
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 999;
+        min-height: 18rem;
+        height: 45vh;
+        width: 100dvw;
+        transform: translateY(-100%);
+        transition: ease-in-out 0.2s;
+    }
+
+    nav .nav-container ul.show {
+        transform: translateY(0);
     }
 }
 
