@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const whatsappMessage = `Halo Admin, saya ingin konsultasi produk.
 Nama    : ${name}
-Kategor : ${category}
+Kategori : ${category}
 Pesan   : ${message}`
 
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(whatsappMessage)}`
